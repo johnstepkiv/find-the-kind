@@ -9,20 +9,22 @@
 /**
  * 
  */
-UCLASS()
+UCLASS(BlueprintType)
 class FIND_THE_KIND_API UFindTheKindDataAsset : public UDataAsset
 {
 	GENERATED_BODY()
 
-	UPROPERTY(EditAnywhere)
+public:
+	
+	UPROPERTY(EditAnywhere, BlueprintReadOnly)
 	UTexture2D* CorrectParentAnimal;
 
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditAnywhere, BlueprintReadOnly)
 	TArray<UTexture2D*> OtherAnimals;
 
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditAnywhere, BlueprintReadOnly)
 	UTexture2D* ChildAnimal;
 
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditAnywhere, BlueprintReadOnly)
 	UTexture2D* WinScreen;
 };
