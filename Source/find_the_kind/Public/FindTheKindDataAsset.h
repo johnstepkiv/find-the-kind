@@ -13,5 +13,16 @@ UCLASS()
 class FIND_THE_KIND_API UFindTheKindDataAsset : public UDataAsset
 {
 	GENERATED_BODY()
-	
+
+	UPROPERTY(EditAnywhere)
+	UTexture2D* CorrectParentAnimal;
+
+	UPROPERTY(EditAnywhere)
+	TArray<UTexture2D*> OtherAnimals;
+
+	UPROPERTY(EditAnywhere)
+	UTexture2D* ChildAnimal;
+
+	UPROPERTY(EditAnywhere)
+	UTexture2D* WinScreen;
 };
