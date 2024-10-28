@@ -17,13 +17,16 @@ class FIND_THE_KIND_API UFindTheKindDataAsset : public UDataAsset
 public:
 	
 	UPROPERTY(EditAnywhere, BlueprintReadOnly)
-	UTexture2D* CorrectParentAnimal;
+	int CorrectAnimalIndex;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly)
-	TArray<UTexture2D*> OtherAnimals;
+	TArray<UTexture2D*> Animals;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly)
 	UTexture2D* ChildAnimal;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly)
+	FText WinText;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly)
 	UTexture2D* WinScreen;
